@@ -273,12 +273,12 @@ void snakeMovement(){  //-------------------------------------------------------
         snakeHeadY--;
     }else if(keyInput == 'a' || keyInput == 75){
         snakeHeadX--;
-        // snakeHeadX--;
+        snakeHeadX--;
     }else if(keyInput == 's' || keyInput == 80){
         snakeHeadY++;
     }else if(keyInput == 'd' || keyInput == 77){
         snakeHeadX++;
-        // snakeHeadX++;
+        snakeHeadX++;
     }
 
 
@@ -423,6 +423,7 @@ void scorePrint(){  //----------------------------------------------------------
     printf("Max Score: %3d", maxScore);
     for(int i = 0; i < boundaryEndX - 31; i++) printf(" ");
     printf("Current Score: %3d\n", score);
+    printf("Press 'p' for pause and resume\n" );
     
 }
 
@@ -525,8 +526,7 @@ void levelChoose(){  //---------------------------------------------------------
                 }
 
                 else if(i == boundaryStartY + secondLine && j == boundaryEndX / 2 + secondMargine){
-                    if(currentLevelArrow
-                     == 1){
+                    if(currentLevelArrow == 1){
                         printf("> ");
                         j += 2;
                     }
@@ -535,8 +535,7 @@ void levelChoose(){  //---------------------------------------------------------
                 }
 
                 else if(i == boundaryStartY + thirdLine && j == boundaryEndX / 2 + thirdMargine){
-                    if(currentLevelArrow
-                     == 2){
+                    if(currentLevelArrow == 2){
                         printf("> ");
                         j += 2;
                     }
@@ -545,8 +544,7 @@ void levelChoose(){  //---------------------------------------------------------
                 }
 
                 else if(i == boundaryStartY + forthLine && j == boundaryEndX / 2 + forthMargine){
-                    if(currentLevelArrow
-                     == 3){
+                    if(currentLevelArrow == 3){
                         printf("> ");
                         j += 2;
                     }
@@ -555,8 +553,7 @@ void levelChoose(){  //---------------------------------------------------------
                 }
 
                 else if(i == boundaryStartY + fifthLine && j == boundaryEndX / 2 + fifthMargine){
-                    if(currentLevelArrow
-                     == 4){
+                    if(currentLevelArrow == 4){
                         printf("> ");
                         j += 2;
                     }
@@ -565,8 +562,7 @@ void levelChoose(){  //---------------------------------------------------------
                 }
 
                 else if(i == boundaryStartY + sixthLine && j == boundaryEndX / 2 + sixthMargine){
-                    if(currentLevelArrow
-                     == 5){
+                    if(currentLevelArrow == 5){
                         printf("> ");
                         j += 2;
                     }
@@ -645,7 +641,27 @@ void foodSetup(){
 
 void food(){
 
-    if(!(snakeHeadX == foodPositionX && snakeHeadY == foodPositionY)){
+    if(!(snakeHeadX == foodPositionX && snakeHeadY == foodPositionY) && currentLevelArrow != 5){
+        return;
+    }
+    else if((snakeHeadX == foodPositionX && snakeHeadY == foodPositionY) && currentLevelArrow == 5){
+        score += 10;
+        snakeLength++;
+        Beep(750, 100);
+    }
+
+    if(currentLevelArrow == 5){
+        foodPositionX = 0;
+        foodPositionY = 0;
+        while(1){
+            srand(time(NULL));
+            foodPositionX = (rand() % (boundaryEndX - boundaryStartX - 3)) + 2;
+            if(foodPositionX & 1) foodPositionX++;
+            // Sleep(3);
+            srand(time(NULL));
+            foodPositionY = (rand() % (boundaryEndY - boundaryStartY - 3)) + 2;
+            if(!(foodPositionX == snakeHeadX && foodPositionY == snakeHeadY) && !(overlapWithBody(foodPositionX, foodPositionY))) break;
+        }
         return;
     }
 
@@ -653,8 +669,7 @@ void food(){
     snakeLength++;
     Beep(750, 100);
 
-    foodPositionX = 0;
-    foodPositionY = 0;
+    
 
     while(1){
 
