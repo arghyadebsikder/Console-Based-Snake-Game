@@ -1,3 +1,32 @@
+//   
+//             ██████╗ ██████╗ ███╗   ██╗███████╗ ██████╗ ██╗     ███████╗
+//            ██╔════╝██╔═══██╗████╗  ██║██╔════╝██╔═══██╗██║     ██╔════╝
+//            ██║     ██║   ██║██╔██╗ ██║███████╗██║   ██║██║     █████╗
+//            ██║     ██║   ██║██║╚██╗██║╚════██║██║   ██║██║     ██╔══╝
+//            ╚██████╗╚██████╔╝██║ ╚████║███████║╚██████╔╝███████╗███████╗
+//             ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚══════╝╚══════╝
+// 
+//  ███████╗███╗   ██╗ █████╗ ██╗  ██╗███████╗       ██████╗  █████╗ ███╗   ███╗███████╗  
+//  ██╔════╝████╗  ██║██╔══██╗██║ ██╔╝██╔════╝      ██╔════╝ ██╔══██╗████╗ ████║██╔════╝  
+//  ███████╗██╔██╗ ██║███████║█████╔╝ █████╗        ██║  ███╗███████║██╔████╔██║█████╗    
+//  ╚════██║██║╚██╗██║██╔══██║██╔═██╗ ██╔══╝        ██║   ██║██╔══██║██║╚██╔╝██║██╔══╝    
+//  ███████║██║ ╚████║██║  ██║██║  ██╗███████╗      ╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗  
+//  ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝       ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝  
+// 
+//                     C O N S O L E   S N A K E   G A M E
+//
+//   Language   : C (Console Application)
+//   Platform   : Windows (WinAPI + ANSI)
+//   Type       : Classic Snake Game
+//
+//   Description:
+//   A fully interactive console-based Snake Game featuring
+//   multiple difficulty levels, persistent high scores,
+//   smooth cursor control, and real-time keyboard input.
+//
+//   Author     : Arghya
+//   Version    : 2.0
+
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
@@ -779,4 +808,5 @@ void hideCursor(){ //ChatGPT generated -----------------------------------------
 void setCursor(short x, short y){ //ChatGPT generated -------------------------------------------------------
     COORD position = {x, y};
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
+
 }
