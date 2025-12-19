@@ -400,6 +400,8 @@ void pauseScreen(){
         }
         setCursor(boundaryStartX, boundaryStartY);
 
+        title();
+
         for(int i = boundaryStartY; i <= boundaryEndY; i++){
             for(int j = boundaryStartX; j <= boundaryEndX; j++){
 
