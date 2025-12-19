@@ -8,23 +8,13 @@ Everything happens in the terminal. No graphics libraries. No shortcuts. Just lo
 
 ## Screenshots
 
-## Welcome Screen
-<img width="719" height="729" alt="image" src="https://github.com/user-attachments/assets/f2898175-da59-4fe5-8f64-744ca2d6eed8" />
+| Welcome Screen | Display High Score | Level Choose Screen |
+|----------------|--------------------|---------------------|
+|<img width="300" height="300" alt="Welcome Screen" src="https://github.com/user-attachments/assets/f2898175-da59-4fe5-8f64-744ca2d6eed8" />|<img width="300" height="300" alt="Display High Score" src="https://github.com/user-attachments/assets/f175e345-2bf3-4346-9b85-427e9ae1dd4d" />| <img width="300" height="300" alt="Level Choose Screen" src="https://github.com/user-attachments/assets/cccf3efe-0def-469d-8ebc-64bcdeef59fe" />| 
 
-## Display High Score
-<img width="718" height="724" alt="image" src="https://github.com/user-attachments/assets/f175e345-2bf3-4346-9b85-427e9ae1dd4d" />
-
-## Level Choose Screen
-<img width="716" height="726" alt="image" src="https://github.com/user-attachments/assets/cccf3efe-0def-469d-8ebc-64bcdeef59fe" />
-
-## In-Game Screen
-<img width="717" height="832" alt="image" src="https://github.com/user-attachments/assets/a4e2e295-9070-4ef5-83ec-21ceb2c52b1a" />
-
-## Pause Screen
-<img width="675" height="757" alt="image" src="https://github.com/user-attachments/assets/d2671a9f-c4c8-4518-bdd7-a5f4d1f9032e" />
-
-## Game Over Screen
-<img width="715" height="725" alt="image" src="https://github.com/user-attachments/assets/3ba87477-ba44-4ad7-9efe-7391e98395e9" />
+| In-Game Screen | Pause Screen | Game Over Screen |
+|----------------|--------------|------------------|
+| <img width="300" height="300" alt="In-Game Screen" src="https://github.com/user-attachments/assets/a4e2e295-9070-4ef5-83ec-21ceb2c52b1a" /> | <img width="300" height="300" alt="Pause Screen" src="https://github.com/user-attachments/assets/d2671a9f-c4c8-4518-bdd7-a5f4d1f9032e" /> | <img width="300" height="300" alt="Game Over Screen" src="https://github.com/user-attachments/assets/3ba87477-ba44-4ad7-9efe-7391e98395e9" /> |
 
 
 ---
